@@ -1,8 +1,10 @@
 function subtract(firstNumber, secondNumber){
-    if(firstNumber !== undefined || secondNumber !== undefined){
+    if(isNaN(firstNumber) || isNaN(secondNumber)){
+        return 'klsddnsdfd';
+    }
+    if(typeof(firstNumber) === 'number' || typeof(secondNumber) === 'number'){
         return firstNumber - secondNumber;
     }
-    return 'jdsfsfdsdf';
 }
 
 module.exports = subtract;

@@ -1,7 +1,7 @@
 const sub = require('./subtract_testing');
 
 test('Empty parameters; one parameter only provided',()=>{
-    expect(sub()).toBe('jdsfsfdsdf');
+    expect(sub()).toBe('klsddnsdfd');
 });
 
 test('10 - 1 to equal 9',()=>{
@@ -14,4 +14,8 @@ test('Rounding floats; case of (0.2)-(-0.1)', ()=>{
 test('Rounding floats; case of (0.1)-(-0.2)', ()=>{
     expect(sub(0.1, -0.2)).toBeCloseTo(0.3)
 });
+
+test('firstNumber and second Number are NaN',()=>{
+    expect(sub(NaN, NaN)).toBe('klsddnsdfd');
+})
 
