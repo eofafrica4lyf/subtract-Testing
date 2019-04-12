@@ -1,10 +1,8 @@
 function subtract(firstNumber, secondNumber){
-    if(isNaN(firstNumber) || isNaN(secondNumber)){
-        return 'klsddnsdfd';
-    }
-    if(typeof(firstNumber) === 'number' || typeof(secondNumber) === 'number'){
+    if((typeof(firstNumber) === 'number' || typeof(secondNumber) === 'number' )&&( !isNaN(firstNumber) || !isNaN(secondNumber) ) && ( !(firstNumber === Infinity) || !(secondNumber === Infinity) ) ){
         return firstNumber - secondNumber;
     }
+    return 'klsddnsdfd';
 }
 
 module.exports = subtract;
